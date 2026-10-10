@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="banner" />
+<img src="./assets/banner.svg" width="80%" alt="banner" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3500&pause=900&color=C4B5FD&center=true&vCenter=true&width=650&height=45&lines=Developing+my+skills;Network+%2F+IoT+Track;Building+projects+one+commit+at+a+time;Currently+learning+CCNA)](https://git.io/typing-svg)
 
@@ -63,7 +63,7 @@
 ## <img src="https://api.iconify.design/lucide/orbit.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Contribution Activity
 
 <div align="center">
-  <img src="./metrics.plugin.isocalendar.svg" alt="3D contribution calendar" width="100%" />
+  <img src="./metrics.plugin.isocalendar.svg" alt="3D contribution calendar" width="65%" />
 </div>
 
 ---
