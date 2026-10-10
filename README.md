@@ -93,9 +93,11 @@
 <div align="center">
 
 <br/>
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=140d2b&quoteColor=ddd6fe&authorColor=f9a8d4&borderColor=5b3a9e" alt="dev quote" />
+
+<i>"It always seems impossible until it's done."</i> ♡<br/>
+<sub>— Nelson Mandela</sub>
+
 <br/>
-<img src="https://komarev.com/ghpvc/?username=maicode10&label=views&color=c084fc&style=flat-square&labelColor=140d2b" alt="views" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=130&color=0:c084fc,100:f9a8d4&text=thanks%20for%20visiting%20%E2%99%A1&fontSize=22&fontColor=ffffff&fontAlignY=68&animation=fadeIn" width="100%" />
 
