@@ -60,10 +60,10 @@
 
 ---
 
-## <img src="https://api.iconify.design/lucide/orbit.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Contribution Activity
+## <img src="https://api.iconify.design/lucide/heart.svg?color=%23f0abfc" width="26" height="26" align="absmiddle" /> Contribution Activity
 
 <div align="center">
-  <img src="./metrics.plugin.isocalendar.svg" alt="3D contribution calendar" width="65%" />
+  <img src="./assets/heart-calendar.svg" alt="heart contribution calendar" width="95%" />
 </div>
 
 ---
