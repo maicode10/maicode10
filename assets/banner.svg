@@ -1,8 +1,17 @@
-<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="ul" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f0abfc"/>
     </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#a78bfa" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".55" r=".6">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <style>
     .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
@@ -13,24 +22,40 @@
     @keyframes bl{50%{opacity:0}}
   </style>
 
+  <!-- soft glow (walay edge, mo-fade ra) -->
+  <rect width="900" height="260" fill="url(#glow)"/>
+
+  <!-- window dots + title -->
+  <circle cx="40" cy="26" r="4.5" fill="#f0abfc"/>
+  <circle cx="58" cy="26" r="4.5" fill="#c084fc"/>
+  <circle cx="76" cy="26" r="4.5" fill="#7c3aed"/>
+  <text class="mono" x="450" y="30" text-anchor="middle" font-size="11" fill="#8b6fd1">maira@bsit: ~/portfolio</text>
+  <rect x="20" y="44" width="860" height="1" fill="url(#hair)"/>
+
+  <!-- corner brackets (duha ra) -->
+  <g fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" opacity=".5">
+    <polyline points="20,64 20,52 32,52" transform="translate(0,-8)"/>
+    <polyline points="880,244 880,254 868,254" transform="translate(0,-4)"/>
+  </g>
+
   <!-- prompt -->
-  <text class="mono ln" x="40" y="34" font-size="13" font-weight="600" style="animation-delay:.1s">
+  <text class="mono ln" x="40" y="86" font-size="13" font-weight="600" style="animation-delay:.1s">
     <tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> whoami</tspan>
   </text>
-  <rect class="cur" x="118" y="23" width="8" height="14" fill="#f0abfc"/>
+  <rect class="cur" x="118" y="75" width="8" height="14" fill="#f0abfc"/>
 
   <!-- name -->
-  <text class="sans ln" x="40" y="102" font-size="58" font-weight="800" fill="#f5f3ff" style="animation-delay:.3s">Maira Domaog</text>
-  <rect class="ln" x="40" y="114" width="140" height="4" rx="2" fill="url(#ul)" style="animation-delay:.6s"/>
+  <text class="sans ln" x="40" y="152" font-size="60" font-weight="800" fill="#f5f3ff" style="animation-delay:.3s">Maira Domaog</text>
+  <rect class="ln" x="40" y="164" width="140" height="4" rx="2" fill="url(#ul)" style="animation-delay:.6s"/>
 
   <!-- role -->
-  <text class="sans ln" x="40" y="150" font-size="20" fill="#ddd6fe" style="animation-delay:.9s">BS Information Technology Student</text>
-  <text class="mono ln" x="40" y="176" font-size="12" fill="#a78bfa" style="animation-delay:1.2s">network / iot  •  web dev  •  always learning</text>
+  <text class="sans ln" x="40" y="199" font-size="20" fill="#ddd6fe" style="animation-delay:.9s">BS Information Technology Student</text>
+  <text class="mono ln" x="40" y="225" font-size="12" fill="#a78bfa" style="animation-delay:1.2s">network / iot  •  web dev  •  always learning</text>
 
   <!-- big faded code icon -->
-  <g fill="none" stroke="#7c3aed" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".28">
-    <polyline points="700,55 650,100 700,145"/>
-    <line x1="775" y1="45" x2="745" y2="155"/>
-    <polyline points="800,55 850,100 800,145"/>
+  <g fill="none" stroke="#8b5cf6" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".3">
+    <polyline points="690,100 640,145 690,190"/>
+    <line x1="765" y1="90" x2="735" y2="200"/>
+    <polyline points="790,100 840,145 790,190"/>
   </g>
 </svg>
