@@ -1,0 +1,33 @@
+name: Heart Calendar
+
+on:
+  schedule: [{cron: "0 */12 * * *"}]
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: ["scripts/heart_calendar.py"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate heart calendar
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python scripts/heart_calendar.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/heart-calendar.svg
+          git commit -m "update heart calendar" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push
