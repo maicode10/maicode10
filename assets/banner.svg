@@ -1,0 +1,85 @@
+<svg width="900" height="250" viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0b1f"/>
+      <stop offset="0.6" stop-color="#1a1033"/>
+      <stop offset="1" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#f0abfc"/>
+    </linearGradient>
+    <radialGradient id="orb">
+      <stop offset="0" stop-color="#c084fc" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#a855f7" stroke-opacity="0.08"/>
+    </pattern>
+    <clipPath id="reveal">
+      <rect x="50" y="85" height="80" width="0">
+        <animate attributeName="width" values="0;520;520;0" keyTimes="0;0.2;0.9;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
+    .sans{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+    .cur{animation:bl 1s steps(1) infinite}
+    @keyframes bl{50%{opacity:0}}
+    .code{animation:fl 6s ease-in-out infinite}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .orb{animation:fl 8s ease-in-out infinite 1s}
+    .s1{animation:tw 3s ease-in-out infinite}
+    .s2{animation:tw 2s ease-in-out infinite .8s}
+    .s3{animation:tw 4s ease-in-out infinite 1.5s}
+    @keyframes tw{0%,100%{opacity:.1}50%{opacity:.9}}
+    .sub{animation:fi 9s ease-in-out infinite}
+    @keyframes fi{0%,15%{opacity:0}30%,90%{opacity:1}100%{opacity:0}}
+  </style>
+
+  <rect width="900" height="250" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="250" rx="18" fill="url(#grid)"/>
+  <rect x="1" y="1" width="898" height="248" rx="17" fill="none" stroke="#7c3aed" stroke-opacity="0.5"/>
+
+  <g class="orb"><circle cx="740" cy="110" r="130" fill="url(#orb)"/></g>
+
+  <circle class="s1" cx="520" cy="40" r="2" fill="#e9d5ff"/>
+  <circle class="s2" cx="600" cy="205" r="1.5" fill="#f0abfc"/>
+  <circle class="s3" cx="850" cy="45" r="2" fill="#e9d5ff"/>
+  <circle class="s1" cx="870" cy="205" r="1.5" fill="#d8b4fe"/>
+  <circle class="s2" cx="430" cy="215" r="1.5" fill="#e9d5ff"/>
+
+  <!-- window dots -->
+  <circle cx="34" cy="30" r="5" fill="#f0abfc" opacity=".8"/>
+  <circle cx="54" cy="30" r="5" fill="#c084fc" opacity=".8"/>
+  <circle cx="74" cy="30" r="5" fill="#7c3aed" opacity=".8"/>
+
+  <!-- big code symbol -->
+  <g class="code">
+    <text class="mono" x="610" y="185" font-size="150" font-weight="700" fill="#a855f7" opacity="0.18">&lt;/&gt;</text>
+  </g>
+
+  <!-- whoami -->
+  <text class="mono" x="50" y="78" font-size="17" font-weight="600">
+    <tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> whoami</tspan>
+  </text>
+  <rect class="cur" x="146" y="63" width="10" height="18" fill="#f0abfc"/>
+
+  <!-- name (typing reveal) -->
+  <g clip-path="url(#reveal)">
+    <text class="sans" x="50" y="140" font-size="56" font-weight="800" fill="#ffffff">Maira Domaog</text>
+  </g>
+
+  <!-- subtitle -->
+  <g class="sub">
+    <text class="sans" x="50" y="178" font-size="20" fill="#c4b5fd">BS Information Technology Student</text>
+    <text class="mono" x="50" y="206" font-size="14" fill="#a78bfa">network / iot  •  web dev  •  always learning</text>
+  </g>
+
+  <!-- accent bar -->
+  <rect x="50" y="188" height="4" rx="2" fill="url(#bar)" width="0">
+    <animate attributeName="width" values="0;150;150;0" keyTimes="0;0.25;0.9;1" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
