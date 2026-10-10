@@ -1,44 +1,68 @@
+<h1 align="center">hi, i'm mai 💜</h1>
+
+<p align="center">
+  <i>IT student · developer in progress</i>
+</p>
+
 <div align="center">
 
-<img src="./assets/purple-space.svg" width="100%" alt="banner" />
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=D8B4FE&background=0D0B1F00&center=true&vCenter=true&width=650&height=50&lines=%24+whoami;%3E+Maira+Lorraine+Domaog;%3E+3rd+Year+BSIT+Student;%3E+Network+%2F+IoT+Enthusiast;%3E+sudo+build+cool-things+--now)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=C4B5FD&center=true&vCenter=true&width=500&lines=learning+something+new+everyday;network+%2F+iot+track+%F0%9F%8C%90;building+little+projects+%E2%9C%A8)](https://git.io/typing-svg)
 
 </div>
 
-![line](https://capsule-render.vercel.app/api?type=rect&color=0:0d0b1f,50:a855f7,100:0d0b1f&height=3)
+---
 
-## 💻 Tech Stack
-<div align="center">
+### about me
+- 3rd-year BSIT student, **Network / IoT** track
+- I build with Java, Python, Laravel, and React
+- currently exploring networking and CCNA
+- always learning, always debugging
 
-![React](https://img.shields.io/badge/React-0d0b1f?style=for-the-badge&logo=react&logoColor=f0abfc)
-![Laravel](https://img.shields.io/badge/Laravel-0d0b1f?style=for-the-badge&logo=laravel&logoColor=f0abfc)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d0b1f?style=for-the-badge&logo=postgresql&logoColor=f0abfc)
-![Java](https://img.shields.io/badge/Java-0d0b1f?style=for-the-badge&logo=openjdk&logoColor=f0abfc)
-![Python](https://img.shields.io/badge/Python-0d0b1f?style=for-the-badge&logo=python&logoColor=f0abfc)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-0d0b1f?style=for-the-badge&logo=ubuntu&logoColor=f0abfc)
-![Cisco](https://img.shields.io/badge/Cisco-0d0b1f?style=for-the-badge&logo=cisco&logoColor=f0abfc)
+---
 
-</div>
+### tools i use
+<p>
 
-![line](https://capsule-render.vercel.app/api?type=rect&color=0:0d0b1f,50:a855f7,100:0d0b1f&height=3)
+![Java](https://img.shields.io/badge/Java-c4b5fd?style=flat-square&logo=openjdk&logoColor=1e1b2e)
+![Python](https://img.shields.io/badge/Python-c4b5fd?style=flat-square&logo=python&logoColor=1e1b2e)
+![PHP](https://img.shields.io/badge/PHP-c4b5fd?style=flat-square&logo=php&logoColor=1e1b2e)
+![Laravel](https://img.shields.io/badge/Laravel-c4b5fd?style=flat-square&logo=laravel&logoColor=1e1b2e)
+![React](https://img.shields.io/badge/React-c4b5fd?style=flat-square&logo=react&logoColor=1e1b2e)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-c4b5fd?style=flat-square&logo=postgresql&logoColor=1e1b2e)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-c4b5fd?style=flat-square&logo=ubuntu&logoColor=1e1b2e)
+![Cisco](https://img.shields.io/badge/Cisco-c4b5fd?style=flat-square&logo=cisco&logoColor=1e1b2e)
 
-## 🌌 3D Contribution Calendar
+</p>
+
+---
+
+### my contributions
 <div align="center">
   <img src="./metrics.plugin.isocalendar.svg" alt="3D contribution calendar" width="100%" />
 </div>
 
-![line](https://capsule-render.vercel.app/api?type=rect&color=0:0d0b1f,50:a855f7,100:0d0b1f&height=3)
+---
 
-## 📌 Projects
-- 🎮 [**Tetris-Game**](https://github.com/maicode10/Tetris-Game): Tetris game gamit ang Python
-- 🧮 [**Functional-Calculator**](https://github.com/maicode10/Functional-Calculator): modern GUI calculator, Java Swing + BigDecimal
-- 💱 [**Currency-Converter**](https://github.com/maicode10/Currency-Converter): JavaFX app, 17 ka currencies, purple UI
+### things i made
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/maicode10/Tetris-Game">🎮 Tetris-Game</a></b><br/>
+      <sub>Tetris built with Python</sub>
+    </td>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/maicode10/Functional-Calculator">🧮 Functional-Calculator</a></b><br/>
+      <sub>Dark GUI calculator, Java Swing</sub>
+    </td>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/maicode10/Currency-Converter">💱 Currency-Converter</a></b><br/>
+      <sub>JavaFX app with a purple UI</sub>
+    </td>
+  </tr>
+</table>
 
-![line](https://capsule-render.vercel.app/api?type=rect&color=0:0d0b1f,50:a855f7,100:0d0b1f&height=3)
+---
 
-<div align="center">
-
-💜 *Thanks for visiting!* 💜
-
-</div>
+<p align="center">
+  <sub>thanks for stopping by 💜</sub>
+</p>
