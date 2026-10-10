@@ -1,80 +1,63 @@
-<svg width="900" height="310" viewBox="0 0 900 310" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <path id="h" d="M0,4.6 C-7.4,-1 -4.2,-6.8 0,-2.9 C4.2,-6.8 7.4,-1 0,4.6 Z"/>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#6d28d9"/>
+      <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#5b3a9e"/>
     </linearGradient>
     <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#a855f7" stroke-opacity="0.08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#a855f7" stroke-opacity="0.05"/>
     </pattern>
-    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="10"/></filter>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
-    <clipPath id="card"><rect x="10" y="10" width="880" height="290" rx="14"/></clipPath>
+    <clipPath id="card"><rect x="10" y="10" width="880" height="280" rx="14"/></clipPath>
   </defs>
   <style>
     .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
     .k{fill:#a78bfa;font-size:13px}
-    .c{fill:#7c3aed;font-size:13px}
-    .v{fill:#f5d0fe;font-size:13px;font-weight:600}
+    .c{fill:#6d4fc2;font-size:13px}
+    .v{fill:#ede9fe;font-size:13px}
     .ln{opacity:0;animation:fi .6s ease forwards}
     @keyframes fi{to{opacity:1}}
     .cur{animation:bl 1s steps(1) infinite}
     @keyframes bl{50%{opacity:0}}
-    .pulse{animation:pu 4s ease-in-out infinite}
-    @keyframes pu{0%,100%{opacity:.3}50%{opacity:.6}}
-    .tw{animation:tw 3.5s ease-in-out infinite}
-    @keyframes tw{0%,100%{opacity:1}50%{opacity:.35}}
-    .float{animation:fl 5s ease-in-out infinite}
-    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
   </style>
 
-  <rect class="pulse" x="10" y="10" width="880" height="290" rx="14" fill="#7c3aed" filter="url(#blur)"/>
-  <rect x="10" y="10" width="880" height="290" rx="14" fill="#140d2b"/>
+  <!-- card -->
+  <rect x="10" y="10" width="880" height="280" rx="14" fill="#140d2b"/>
   <g clip-path="url(#card)">
-    <rect x="10" y="10" width="880" height="290" fill="url(#grid)"/>
-    <rect x="10" y="10" width="880" height="36" fill="#1f1542"/>
-    <rect x="10" y="46" width="880" height="1" fill="#7c3aed" opacity=".6"/>
+    <rect x="10" y="10" width="880" height="280" fill="url(#grid)"/>
+    <rect x="10" y="10" width="880" height="36" fill="#1b1338"/>
+    <rect x="10" y="46" width="880" height="1" fill="#7c3aed" opacity=".4"/>
   </g>
-  <rect x="10" y="10" width="880" height="290" rx="14" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <rect x="10" y="10" width="880" height="280" rx="14" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity=".8"/>
 
+  <!-- window dots + title -->
   <circle cx="34" cy="28" r="5" fill="#f0abfc"/>
   <circle cx="54" cy="28" r="5" fill="#c084fc"/>
   <circle cx="74" cy="28" r="5" fill="#7c3aed"/>
-  <text class="mono" x="450" y="32" text-anchor="middle" font-size="12" fill="#a78bfa">~/about-maira.sh</text>
-  <use href="#h" x="545" y="28" fill="#f0abfc"/>
+  <text class="mono" x="450" y="32" text-anchor="middle" font-size="12" fill="#8b6fd1">~/about-maira.sh</text>
 
-  <text class="mono ln" x="30" y="76" font-size="13" font-weight="600" style="animation-delay:.2s">
+  <!-- prompt -->
+  <text class="mono ln" x="30" y="78" font-size="13" font-weight="600" style="animation-delay:.2s">
     <tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> whoami</tspan>
   </text>
 
+  <!-- info -->
   <g class="mono">
-    <text class="ln" x="40" y="112" style="animation-delay:.6s"><tspan class="k">name</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">Maira Lorraine Domaog</tspan></text>
-    <text class="ln" x="40" y="138" style="animation-delay:.9s"><tspan class="k">role</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">3rd-year BSIT student</tspan></text>
-    <text class="ln" x="40" y="164" style="animation-delay:1.2s"><tspan class="k">track</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">Network / IoT</tspan></text>
-    <text class="ln" x="40" y="190" style="animation-delay:1.5s"><tspan class="k">location</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">Cagayan de Oro, Philippines</tspan></text>
-    <text class="ln" x="40" y="216" style="animation-delay:1.8s"><tspan class="k">currently</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">learning CCNA + building small projects</tspan></text>
-    <text class="ln" x="40" y="242" style="animation-delay:2.1s"><tspan class="k">status</tspan><tspan class="c" x="150"> :</tspan><tspan class="v" x="175">developer in progress</tspan></text>
+    <text class="ln" x="40" y="114" style="animation-delay:.6s"><tspan class="k">name</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">Maira Lorraine Domaog</tspan></text>
+    <text class="ln" x="40" y="140" style="animation-delay:.9s"><tspan class="k">role</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">3rd-year BSIT student</tspan></text>
+    <text class="ln" x="40" y="166" style="animation-delay:1.2s"><tspan class="k">track</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">Network / IoT</tspan></text>
+    <text class="ln" x="40" y="192" style="animation-delay:1.5s"><tspan class="k">location</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">Cagayan de Oro, Philippines</tspan></text>
+    <text class="ln" x="40" y="218" style="animation-delay:1.8s"><tspan class="k">currently</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">learning CCNA + building small projects</tspan></text>
+    <text class="ln" x="40" y="244" style="animation-delay:2.1s"><tspan class="k">status</tspan><tspan class="c" x="150">:</tspan><tspan class="v" x="170">developer in progress</tspan></text>
   </g>
 
-  <text class="mono ln" x="30" y="278" font-size="13" font-weight="600" style="animation-delay:2.5s">
-    <tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> echo "hi, nice to meet you"</tspan>
+  <!-- last prompt -->
+  <text class="mono ln" x="30" y="274" font-size="13" font-weight="600" style="animation-delay:2.5s">
+    <tspan fill="#f0abfc">$</tspan>
   </text>
-  <rect class="cur" x="268" y="267" width="8" height="14" fill="#f0abfc"/>
+  <rect class="cur" x="46" y="263" width="8" height="14" fill="#f0abfc"/>
 
-  <!-- big heart -->
-  <g class="float">
-    <use href="#h" x="770" y="150" fill="#f0abfc" transform="translate(-770 -150) translate(770 150) scale(1)" opacity="0"/>
-    <g transform="translate(775,160) scale(8)" fill="#f0abfc" filter="url(#glow)" opacity=".55"><use href="#h"/></g>
-    <g transform="translate(775,160) scale(8)" fill="#f0abfc"><use href="#h"/></g>
-    <g transform="translate(775,160) scale(8)" fill="none" stroke="#fdf4ff" stroke-width=".25" opacity=".6"><use href="#h"/></g>
-  </g>
-  <g fill="#c084fc">
-    <use class="tw" href="#h" x="715" y="100" transform="translate(0 0)"/>
-    <use class="tw" href="#h" x="840" y="115" style="animation-delay:.8s" fill="#f9a8d4"/>
-    <use class="tw" href="#h" x="835" y="215" style="animation-delay:1.6s"/>
-    <use class="tw" href="#h" x="705" y="225" style="animation-delay:2.2s" fill="#f9a8d4"/>
-    <use class="tw" href="#h" x="775" y="250" style="animation-delay:1.1s"/>
-  </g>
+  <!-- single soft heart -->
+  <g transform="translate(780,165) scale(7)" fill="#f0abfc" opacity=".85"><use href="#h"/></g>
 
   <!-- ribbon -->
   <g transform="translate(872,14) rotate(25) scale(0.9)" fill="#f9a8d4" stroke="#f0abfc" stroke-width="1" stroke-linejoin="round">
