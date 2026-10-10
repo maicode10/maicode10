@@ -1,0 +1,31 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#5b3a9e"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="10" y="10" width="880" height="180" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
+    .k{fill:#a78bfa;font-size:13px}
+    .v{fill:#ede9fe;font-size:13px}
+    .ln{opacity:0;animation:fi .6s ease forwards}
+    @keyframes fi{to{opacity:1}}
+    .cur{animation:bl 1s steps(1) infinite}
+    @keyframes bl{50%{opacity:0}}
+  </style>
+  <rect x="10" y="10" width="880" height="180" rx="14" fill="#140d2b"/>
+  <g clip-path="url(#card)"><rect x="10" y="10" width="880" height="36" fill="#1b1338"/><rect x="10" y="46" width="880" height="1" fill="#7c3aed" opacity=".4"/></g>
+  <rect x="10" y="10" width="880" height="180" rx="14" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity=".8"/>
+  <circle cx="34" cy="28" r="5" fill="#f0abfc"/><circle cx="54" cy="28" r="5" fill="#c084fc"/><circle cx="74" cy="28" r="5" fill="#7c3aed"/>
+  <text class="mono" x="450" y="32" text-anchor="middle" font-size="12" fill="#8b6fd1">~/now.txt</text>
+
+  <text class="mono ln" x="30" y="76" font-size="13" font-weight="600" style="animation-delay:.2s"><tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> cat now.txt</tspan></text>
+  <g class="mono">
+    <text class="ln" x="40" y="104" style="animation-delay:.6s"><tspan class="k">studying</tspan><tspan class="v" x="160">Cisco CCNA (networking)</tspan></text>
+    <text class="ln" x="40" y="128" style="animation-delay:.9s"><tspan class="k">exploring</tspan><tspan class="v" x="160">IoT project ideas</tspan></text>
+    <text class="ln" x="40" y="152" style="animation-delay:1.2s"><tspan class="k">practicing</tspan><tspan class="v" x="160">web dev with Laravel and React</tspan></text>
+  </g>
+  <text class="mono ln" x="30" y="178" font-size="13" font-weight="600" style="animation-delay:1.6s"><tspan fill="#f0abfc">$</tspan></text>
+  <rect class="cur" x="46" y="167" width="8" height="14" fill="#f0abfc"/>
+</svg>
