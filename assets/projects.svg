@@ -1,0 +1,59 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#5b3a9e"/>
+    </linearGradient>
+    <linearGradient id="ul" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="276" height="200" rx="12"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
+    .sans{font-family:'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif}
+    .card{opacity:0;animation:fi .7s ease forwards}
+    @keyframes fi{to{opacity:1}}
+  </style>
+
+  <!-- Tetris -->
+  <g class="card" transform="translate(10,10)" style="animation-delay:.1s">
+    <rect width="276" height="200" rx="12" fill="#140d2b"/>
+    <g clip-path="url(#c)"><rect width="276" height="30" fill="#1b1338"/><rect y="30" width="276" height="1" fill="#7c3aed" opacity=".4"/></g>
+    <circle cx="18" cy="15" r="4" fill="#f0abfc"/><circle cx="34" cy="15" r="4" fill="#c084fc"/><circle cx="50" cy="15" r="4" fill="#7c3aed"/>
+    <text class="mono" x="70" y="19" font-size="11" fill="#8b6fd1">~/tetris-game</text>
+    <text class="sans" x="20" y="70" font-size="18" font-weight="700" fill="#f5f3ff">Tetris-Game</text>
+    <rect x="20" y="78" width="36" height="3" rx="1.5" fill="url(#ul)"/>
+    <text class="sans" font-size="12.5" fill="#ddd6fe"><tspan x="20" y="106">Classic Tetris: move, rotate, clear</tspan><tspan x="20" y="124">lines, and score points.</tspan></text>
+    <rect x="20" y="158" width="64" height="22" rx="11" fill="#4c1d95"/>
+    <text class="mono" x="32" y="173" font-size="11" fill="#fff">Python</text>
+    <rect width="276" height="200" rx="12" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity=".8"/>
+  </g>
+
+  <!-- Calculator -->
+  <g class="card" transform="translate(312,10)" style="animation-delay:.4s">
+    <rect width="276" height="200" rx="12" fill="#140d2b"/>
+    <g clip-path="url(#c)"><rect width="276" height="30" fill="#1b1338"/><rect y="30" width="276" height="1" fill="#7c3aed" opacity=".4"/></g>
+    <circle cx="18" cy="15" r="4" fill="#f0abfc"/><circle cx="34" cy="15" r="4" fill="#c084fc"/><circle cx="50" cy="15" r="4" fill="#7c3aed"/>
+    <text class="mono" x="70" y="19" font-size="11" fill="#8b6fd1">~/functional-calculator</text>
+    <text class="sans" x="20" y="70" font-size="18" font-weight="700" fill="#f5f3ff">Functional-Calculator</text>
+    <rect x="20" y="78" width="36" height="3" rx="1.5" fill="url(#ul)"/>
+    <text class="sans" font-size="12.5" fill="#ddd6fe"><tspan x="20" y="106">Dark-themed GUI calculator with</tspan><tspan x="20" y="124">glossy buttons and BigDecimal</tspan><tspan x="20" y="142">precision.</tspan></text>
+    <rect x="20" y="158" width="92" height="22" rx="11" fill="#4c1d95"/>
+    <text class="mono" x="32" y="173" font-size="11" fill="#fff">Java Swing</text>
+    <rect width="276" height="200" rx="12" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity=".8"/>
+  </g>
+
+  <!-- Currency -->
+  <g class="card" transform="translate(614,10)" style="animation-delay:.7s">
+    <rect width="276" height="200" rx="12" fill="#140d2b"/>
+    <g clip-path="url(#c)"><rect width="276" height="30" fill="#1b1338"/><rect y="30" width="276" height="1" fill="#7c3aed" opacity=".4"/></g>
+    <circle cx="18" cy="15" r="4" fill="#f0abfc"/><circle cx="34" cy="15" r="4" fill="#c084fc"/><circle cx="50" cy="15" r="4" fill="#7c3aed"/>
+    <text class="mono" x="70" y="19" font-size="11" fill="#8b6fd1">~/currency-converter</text>
+    <text class="sans" x="20" y="70" font-size="18" font-weight="700" fill="#f5f3ff">Currency-Converter</text>
+    <rect x="20" y="78" width="36" height="3" rx="1.5" fill="url(#ul)"/>
+    <text class="sans" font-size="12.5" fill="#ddd6fe"><tspan x="20" y="106">Converts between 17 world</tspan><tspan x="20" y="124">currencies with a gradient</tspan><tspan x="20" y="142">purple UI.</tspan></text>
+    <rect x="20" y="158" width="70" height="22" rx="11" fill="#4c1d95"/>
+    <text class="mono" x="32" y="173" font-size="11" fill="#fff">JavaFX</text>
+    <rect width="276" height="200" rx="12" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity=".8"/>
+  </g>
+</svg>
