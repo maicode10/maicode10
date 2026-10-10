@@ -10,29 +10,21 @@
 
 </div>
 
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/terminal.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> About Me
 
 ```text
-$ neofetch
-
-  .-~~~-.   .-~~~-.      maira@github
- /       \ /       \     ──────────────────────────────
-|         V         |    name      : Maira Lorraine Domaog
- \                 /     role      : 3rd-year BSIT student
-  \               /      track     : Network / IoT
-   \             /       location  : Cagayan de Oro, PH
-    \           /        langs     : Java · Python · PHP · JS
-     \         /         learning  : Cisco CCNA
-      \       /          building  : small projects
-       \     /           status    : developer in progress ♥
-        \   /
-         \ /
-          V
+$ whoami
+> name       : Maira Lorraine Domaog
+> role       : 3rd-year BSIT student
+> track      : Network / IoT
+> location   : Cagayan de Oro, Philippines
+> currently  : learning CCNA + building small projects
+> status     : developer in progress ♥
 ```
 
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/wrench.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Tech Stack
 
@@ -57,19 +49,7 @@ $ neofetch
 
 </div>
 
-```text
-$ ls skills/
-
-Java        ████████░░  80%
-Python      ███████░░░  70%
-PHP         ██████░░░░  60%
-JavaScript  ██████░░░░  60%
-Laravel     █████░░░░░  50%
-React       █████░░░░░  50%
-Networking  ████░░░░░░  40%
-```
-
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/activity.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> GitHub Overview
 
@@ -79,7 +59,7 @@ Networking  ████░░░░░░  40%
 
 </div>
 
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/heart.svg?color=%23f0abfc" width="26" height="26" align="absmiddle" /> Contribution Activity
 
@@ -87,37 +67,34 @@ Networking  ████░░░░░░  40%
   <img src="./assets/heart-calendar.svg" alt="heart contribution calendar" width="95%" />
 </div>
 
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/rocket.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Featured Projects
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <code>🩷 🟣 💜 ~/tetris-game</code>
       <h3><img src="https://api.iconify.design/lucide/gamepad-2.svg?color=%23c084fc" width="22" height="22" align="absmiddle" /> <a href="https://github.com/maicode10/Tetris-Game">Tetris-Game</a></h3>
       <p>Classic Tetris: move, rotate, clear lines, and score points.</p>
-      <img src="https://img.shields.io/badge/Python-4c1d95?style=flat-square&logo=python&logoColor=white" /><br/>
-      <code>$ git clone ♥</code>
+      <img src="https://img.shields.io/badge/Python-4c1d95?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/github/last-commit/maicode10/Tetris-Game?style=flat-square&color=c084fc&labelColor=140d2b&label=last%20commit" />
     </td>
     <td width="33%" valign="top">
-      <code>🩷 🟣 💜 ~/functional-calculator</code>
       <h3><img src="https://api.iconify.design/lucide/calculator.svg?color=%23c084fc" width="22" height="22" align="absmiddle" /> <a href="https://github.com/maicode10/Functional-Calculator">Functional-Calculator</a></h3>
       <p>Dark-themed GUI calculator with glossy buttons and BigDecimal precision.</p>
-      <img src="https://img.shields.io/badge/Java_Swing-4c1d95?style=flat-square&logo=openjdk&logoColor=white" /><br/>
-      <code>$ git clone ♥</code>
+      <img src="https://img.shields.io/badge/Java_Swing-4c1d95?style=flat-square&logo=openjdk&logoColor=white" />
+      <img src="https://img.shields.io/github/last-commit/maicode10/Functional-Calculator?style=flat-square&color=c084fc&labelColor=140d2b&label=last%20commit" />
     </td>
     <td width="33%" valign="top">
-      <code>🩷 🟣 💜 ~/currency-converter</code>
       <h3><img src="https://api.iconify.design/lucide/coins.svg?color=%23c084fc" width="22" height="22" align="absmiddle" /> <a href="https://github.com/maicode10/Currency-Converter">Currency-Converter</a></h3>
       <p>Converts between 17 world currencies with a gradient purple UI.</p>
-      <img src="https://img.shields.io/badge/JavaFX-4c1d95?style=flat-square&logo=openjdk&logoColor=white" /><br/>
-      <code>$ git clone ♥</code>
+      <img src="https://img.shields.io/badge/JavaFX-4c1d95?style=flat-square&logo=openjdk&logoColor=white" />
+      <img src="https://img.shields.io/github/last-commit/maicode10/Currency-Converter?style=flat-square&color=c084fc&labelColor=140d2b&label=last%20commit" />
     </td>
   </tr>
 </table>
 
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
 
 ## <img src="https://api.iconify.design/lucide/sprout.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Currently
 
@@ -125,24 +102,8 @@ Networking  ████░░░░░░  40%
 - <img src="https://api.iconify.design/lucide/cpu.svg?color=%23c084fc" width="18" height="18" align="absmiddle" /> Exploring IoT project ideas
 - <img src="https://api.iconify.design/lucide/code.svg?color=%23c084fc" width="18" height="18" align="absmiddle" /> Practicing web dev with Laravel and React
 
-```text
-$ cat progress.txt
-
-CCNA         ▓▓▓▓░░░░░░  40%
-IoT ideas    ▓▓▓░░░░░░░  30%
-Laravel      ▓▓▓▓▓░░░░░  50%
-```
-
-<div align="center">⋆｡˚ ── ♡ ── ˚｡⋆</div>
-
 <div align="center">
 
-```text
-$ echo "thanks for visiting ♥"
-thanks for visiting ♥
-$ █
-```
-
-<img src="https://img.shields.io/badge/Thanks_for_visiting-7c3aed?style=for-the-badge&logo=heart&logoColor=white" />
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=130&color=0:7c3aed,100:f0abfc&text=thanks%20for%20visiting%20%E2%99%A5&fontSize=22&fontColor=ffffff&fontAlignY=68&animation=fadeIn" width="100%" />
 
 </div>
