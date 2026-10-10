@@ -14,21 +14,9 @@
 
 ## <img src="https://api.iconify.design/lucide/terminal.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> About Me
 
-```text
-$ whoami
-> name       : Maira Lorraine Domaog
-> role       : 3rd-year BSIT student
-> track      : Network / IoT
-> location   : Cagayan de Oro, Philippines
-> currently  : learning CCNA + building small projects
-> status     : developer in progress ♥
-```
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:7c3aed,100:f0abfc" width="100%" />
-
-## <img src="https://api.iconify.design/lucide/wrench.svg?color=%23c084fc" width="26" height="26" align="absmiddle" /> Tech Stack
-
 <div align="center">
+  <img src="./assets/about-me.svg" alt="about me terminal card" width="95%" />
+</div>
 
 **Languages**<br/>
 ![Java](https://img.shields.io/badge/Java-0d0b1f?style=for-the-badge&logo=openjdk&logoColor=f0abfc)
