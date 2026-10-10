@@ -1,4 +1,4 @@
-import os, json, datetime, urllib.request
+import os, json, urllib.request
 
 QUERY = """
 query($login:String!){
@@ -71,7 +71,18 @@ def build_svg(weeks, total):
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-    hearts, labels = [], []
+    # snake path: zigzag column by column (down, up, down, ...)
+    order = []
+    for wi, w in enumerate(weeks):
+        ds = sorted(w["contributionDays"], key=lambda d: d["weekday"])
+        if wi % 2:
+            ds.reverse()
+        order += [(wi, d) for d in ds]
+    n = max(len(order), 2)
+    T = n * 0.1
+    idx = {d["date"]: i for i, (_, d) in enumerate(order)}
+
+    hearts, labels, kf = [], [], []
     last_month = None
     for wi, w in enumerate(weeks):
         days = w["contributionDays"]
@@ -88,18 +99,34 @@ def build_svg(weeks, total):
             lvl = LEVELS.get(d["contributionLevel"], 0)
             cx = ox + wi * px
             cy = oy + d["weekday"] * px + 7
-            cls = ""
             style = ""
-            if lvl >= 3:
-                cls = ' class="tw"'
-                style = f' style="animation-delay:{(wi * 7 + d["weekday"]) % 11 * 0.45:.2f}s"'
+            if lvl > 0:
+                i = idx[d["date"]]
+                p = min(i / (n - 1) * 100, 99.3)
+                p2 = p + 0.4
+                kf.append(
+                    f"@keyframes e{i}{{0%,{p:.2f}%{{opacity:1}}"
+                    f"{p2:.2f}%,99.8%{{opacity:0}}100%{{opacity:1}}}}")
+                style = f' style="animation:e{i} {T:.1f}s linear infinite"'
             op = ' opacity=".55"' if lvl == 0 else ""
             hearts.append(
-                f'<use href="#h" x="{cx}" y="{cy}" fill="{COLORS[lvl]}"{op}{cls}{style}/>')
+                f'<use href="#h" x="{cx}" y="{cy}" fill="{COLORS[lvl]}"{op}{style}/>')
+
+    coords = [(ox + wi * px, oy + d["weekday"] * px + 7) for wi, d in order]
+    pts = " ".join(("M" if k == 0 else "L") + f"{x},{y}" for k, (x, y) in enumerate(coords))
+    snake = ""
+    for k in reversed(range(8)):
+        r = 5.6 - k * 0.45
+        fill = "#f9a8d4" if k == 0 else "#c084fc"
+        begin = "0s" if k == 0 else f"-{T - k * 0.18:.2f}s"
+        snake += (
+            f'<circle r="{r:.1f}" fill="{fill}" opacity="{1 - k * 0.08:.2f}">'
+            f'<animateMotion dur="{T:.1f}s" begin="{begin}" repeatCount="indefinite" path="{pts}"/>'
+            '</circle>')
 
     day_labels = "".join(
-        f'<text class="mono" x="26" y="{oy + i * px + 10}" font-size="9" fill="#8b6fd1">{n}</text>'
-        for i, n in ((1, "Mon"), (3, "Wed"), (5, "Fri")))
+        f'<text class="mono" x="26" y="{oy + i * px + 10}" font-size="9" fill="#8b6fd1">{n_}</text>'
+        for i, n_ in ((1, "Mon"), (3, "Wed"), (5, "Fri")))
 
     legend = "".join(
         f'<use href="#h" x="{738 + i * 17}" y="236" fill="{COLORS[i]}"/>' for i in range(5))
@@ -118,12 +145,11 @@ def build_svg(weeks, total):
   </defs>
   <style>
     .mono{{font-family:'Fira Code','Consolas','Courier New',monospace}}
-    .tw{{animation:tw 3.5s ease-in-out infinite}}
-    @keyframes tw{{0%,100%{{opacity:1}}50%{{opacity:.45}}}}
     .cur{{animation:bl 1s steps(1) infinite}}
     @keyframes bl{{50%{{opacity:0}}}}
     .pulse{{animation:pu 4s ease-in-out infinite}}
     @keyframes pu{{0%,100%{{opacity:.3}}50%{{opacity:.6}}}}
+    {"".join(kf)}
   </style>
 
   <rect class="pulse" x="10" y="10" width="880" height="252" rx="14" fill="#7c3aed" filter="url(#blur)"/>
@@ -150,6 +176,7 @@ def build_svg(weeks, total):
   {"".join(labels)}
   {day_labels}
   {"".join(hearts)}
+  {snake}
 
   <text class="mono" x="30" y="240" font-size="11" fill="#8b6fd1">made with</text>
   <use href="#h" x="102" y="236" fill="#f0abfc"/>
