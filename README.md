@@ -66,8 +66,6 @@
 
 <div align="center">
   <img src="./assets/heart-calendar.svg" alt="heart contribution calendar" width="95%" />
-  <br/><br/>
-  <img src="https://raw.githubusercontent.com/maicode10/maicode10/output/snake.svg" alt="snake animation" width="95%" />
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:c084fc,100:f9a8d4" width="100%" />
