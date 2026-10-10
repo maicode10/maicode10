@@ -1,83 +1,36 @@
-<svg width="900" height="230" viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#a855f7"/>
-      <stop offset="1" stop-color="#f0abfc"/>
+    <linearGradient id="ul" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f0abfc"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c084fc"/>
-      <stop offset="1" stop-color="#6d28d9"/>
-    </linearGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#a855f7" stroke-opacity="0.09"/>
-    </pattern>
-    <filter id="glowblur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10"/>
-    </filter>
-    <clipPath id="card"><rect x="10" y="10" width="880" height="210" rx="14"/></clipPath>
-    <clipPath id="reveal">
-      <rect x="40" y="86" height="62" width="0">
-        <animate attributeName="width" values="0;520;520;0" keyTimes="0;0.2;0.9;1" dur="9s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
   </defs>
-
   <style>
     .mono{font-family:'Fira Code','Consolas','Courier New',monospace}
-    .sans{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+    .sans{font-family:'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif}
+    .ln{opacity:0;animation:fi .7s ease forwards}
+    @keyframes fi{to{opacity:1}}
     .cur{animation:bl 1s steps(1) infinite}
     @keyframes bl{50%{opacity:0}}
-    .code{animation:fl 6s ease-in-out infinite}
-    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-    .sub{animation:fi 9s ease-in-out infinite}
-    @keyframes fi{0%,15%{opacity:0}30%,90%{opacity:1}100%{opacity:0}}
-    .pulse{animation:pu 4s ease-in-out infinite}
-    @keyframes pu{0%,100%{opacity:.35}50%{opacity:.7}}
   </style>
 
-  <!-- glow behind card -->
-  <rect class="pulse" x="10" y="10" width="880" height="210" rx="14" fill="#7c3aed" filter="url(#glowblur)"/>
-
-  <!-- card body -->
-  <rect x="10" y="10" width="880" height="210" rx="14" fill="#140d2b"/>
-  <g clip-path="url(#card)">
-    <rect x="10" y="10" width="880" height="210" fill="url(#grid)"/>
-    <!-- title bar -->
-    <rect x="10" y="10" width="880" height="36" fill="#1f1542"/>
-    <rect x="10" y="46" width="880" height="1" fill="#7c3aed" opacity=".6"/>
-  </g>
-  <rect x="10" y="10" width="880" height="210" rx="14" fill="none" stroke="url(#edge)" stroke-width="2"/>
-
-  <!-- window dots + title -->
-  <circle cx="34" cy="28" r="5" fill="#f0abfc"/>
-  <circle cx="54" cy="28" r="5" fill="#c084fc"/>
-  <circle cx="74" cy="28" r="5" fill="#7c3aed"/>
-  <text class="mono" x="450" y="32" text-anchor="middle" font-size="12" fill="#a78bfa">maira@bsit: ~/portfolio</text>
-
-  <!-- big code symbol -->
-  <g class="code">
-    <text class="mono" x="640" y="180" font-size="130" font-weight="700" fill="#a855f7" opacity="0.16">&lt;/&gt;</text>
-  </g>
-
-  <!-- whoami -->
-  <text class="mono" x="40" y="80" font-size="16" font-weight="600">
+  <!-- prompt -->
+  <text class="mono ln" x="40" y="34" font-size="13" font-weight="600" style="animation-delay:.1s">
     <tspan fill="#f0abfc">$</tspan><tspan fill="#d8b4fe"> whoami</tspan>
   </text>
-  <rect class="cur" x="127" y="67" width="9" height="16" fill="#f0abfc"/>
+  <rect class="cur" x="118" y="23" width="8" height="14" fill="#f0abfc"/>
 
   <!-- name -->
-  <g clip-path="url(#reveal)">
-    <text class="sans" x="40" y="132" font-size="50" font-weight="800" fill="#ffffff">Maira Domaog</text>
-  </g>
+  <text class="sans ln" x="40" y="102" font-size="58" font-weight="800" fill="#f5f3ff" style="animation-delay:.3s">Maira Domaog</text>
+  <rect class="ln" x="40" y="114" width="140" height="4" rx="2" fill="url(#ul)" style="animation-delay:.6s"/>
 
-  <!-- accent bar -->
-  <rect x="40" y="146" height="4" rx="2" fill="url(#bar)" width="0">
-    <animate attributeName="width" values="0;150;150;0" keyTimes="0;0.25;0.9;1" dur="9s" repeatCount="indefinite"/>
-  </rect>
+  <!-- role -->
+  <text class="sans ln" x="40" y="150" font-size="20" fill="#ddd6fe" style="animation-delay:.9s">BS Information Technology Student</text>
+  <text class="mono ln" x="40" y="176" font-size="12" fill="#a78bfa" style="animation-delay:1.2s">network / iot  •  web dev  •  always learning</text>
 
-  <!-- subtitle -->
-  <g class="sub">
-    <text class="sans" x="40" y="178" font-size="19" fill="#c4b5fd">BS Information Technology Student</text>
-    <text class="mono" x="40" y="202" font-size="13" fill="#a78bfa">network / iot  •  web dev  •  always learning</text>
+  <!-- big faded code icon -->
+  <g fill="none" stroke="#7c3aed" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".28">
+    <polyline points="700,55 650,100 700,145"/>
+    <line x1="775" y1="45" x2="745" y2="155"/>
+    <polyline points="800,55 850,100 800,145"/>
   </g>
 </svg>
