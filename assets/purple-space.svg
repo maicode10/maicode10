@@ -1,0 +1,56 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0b1f"/>
+      <stop offset="0.5" stop-color="#2e1065"/>
+      <stop offset="1" stop-color="#0d0b1f"/>
+    </linearGradient>
+    <radialGradient id="orb">
+      <stop offset="0" stop-color="#f0abfc" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <style>
+    .t1{animation:tw 3s ease-in-out infinite}
+    .t2{animation:tw 2s ease-in-out infinite .7s}
+    .t3{animation:tw 4s ease-in-out infinite 1.4s}
+    @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+    .f1{animation:fl 6s ease-in-out infinite}
+    .f2{animation:fl 8s ease-in-out infinite 1s}
+    .f3{animation:fl 7s ease-in-out infinite 2s}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+    .shoot{animation:sh 6s linear infinite}
+    @keyframes sh{0%{transform:translate(0,0);opacity:0}4%{opacity:1}25%{transform:translate(320px,160px);opacity:0}100%{transform:translate(320px,160px);opacity:0}}
+    .glow{animation:gl 3s ease-in-out infinite}
+    @keyframes gl{0%,100%{opacity:.25}50%{opacity:.9}}
+    .cur{animation:bl 1s steps(1) infinite}
+    @keyframes bl{50%{opacity:0}}
+  </style>
+  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
+  <circle class="t1" cx="60" cy="40" r="2" fill="#e9d5ff"/>
+  <circle class="t2" cx="150" cy="210" r="1.5" fill="#f0abfc"/>
+  <circle class="t3" cx="240" cy="70" r="2" fill="#e9d5ff"/>
+  <circle class="t1" cx="330" cy="230" r="1.5" fill="#d8b4fe"/>
+  <circle class="t2" cx="420" cy="30" r="2" fill="#f0abfc"/>
+  <circle class="t3" cx="560" cy="225" r="2" fill="#e9d5ff"/>
+  <circle class="t1" cx="650" cy="55" r="1.5" fill="#d8b4fe"/>
+  <circle class="t2" cx="740" cy="200" r="2" fill="#f0abfc"/>
+  <circle class="t3" cx="830" cy="45" r="2" fill="#e9d5ff"/>
+  <circle class="t1" cx="870" cy="150" r="1.5" fill="#d8b4fe"/>
+  <circle class="t2" cx="30" cy="150" r="1.5" fill="#e9d5ff"/>
+  <circle class="t3" cx="500" cy="60" r="1.5" fill="#f0abfc"/>
+  <g class="f1"><circle cx="120" cy="120" r="40" fill="url(#orb)"/></g>
+  <g class="f2"><circle cx="780" cy="110" r="50" fill="url(#orb)"/></g>
+  <g class="f3"><circle cx="620" cy="210" r="28" fill="url(#orb)"/></g>
+  <g transform="translate(70,20)">
+    <g class="shoot">
+      <line x1="0" y1="0" x2="-60" y2="-30" stroke="#f0abfc" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+      <circle r="3" fill="#ffffff"/>
+    </g>
+  </g>
+  <text class="glow" x="450" y="128" text-anchor="middle" font-family="'Fira Code',monospace" font-size="54" font-weight="700" fill="#a855f7" filter="url(#blur)">Maira Domaog</text>
+  <text x="450" y="128" text-anchor="middle" font-family="'Fira Code',monospace" font-size="54" font-weight="700" fill="#ffffff">Maira Domaog</text>
+  <text x="294" y="178" font-family="'Fira Code',monospace" font-size="20" fill="#d8b4fe">&gt; Network &amp; IoT Enthusiast</text>
+  <rect class="cur" x="612" y="161" width="11" height="22" fill="#f0abfc"/>
+</svg>
